@@ -1,12 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
     <head>
-        <title>Project 1</title>
+        <title>HUST Study Hub - Chia sẻ tài liệu sinh viên</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <h1>Chia sẻ tài liệu sinh viên</h1>     
+        <header class="navbar">
+            <div class="container nav-inner">
+                <a href="#" class="logo">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-text">HUST <b>Study Hub</b></span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#" class="active">Trang chủ</a>
+                    <a href="#docs">Tài liệu</a>
+                    <a href="#categories">Ngành học</a>
+                    <a href="#">Đăng tải</a>
+                </nav>
+                <div class="nav-actions">
+                    <button class="btn btn-ghost">Đăng nhập</button>
+                    <button class="btn btn-primary">Đăng ký</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <p class="hero-badge">🎓 Nền tảng của sinh viên Bách Khoa</p>
+                    <h1>Chia sẻ tài liệu <span class="highlight">sinh viên</span> thông minh</h1>
+                    <p class="hero-desc">Ghi chú, đề cương, slide và bài tập được chia sẻ bởi cộng đồng sinh viên Bách Khoa.</p>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Tìm kiếm tài liệu, môn học, giảng viên...">
+                        <button class="btn btn-primary">Tìm kiếm</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="float-card card-1">📖 Ghi chú Giải tích I</div>
+                    <div class="float-card card-2">💻 Lập trình hướng đối tượng</div>
+                    <div class="float-card card-3">🔬 Vật lý đại cương II</div>
+                    <div class="float-card card-4">📐 Đại số</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories" id="categories">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Khám phá theo ngành</h2>
+                    <p>Chọn ngành của bạn để tìm tài liệu phù hợp</p>
+                </div>
+                <div class="cat-grid">
+                    <div class="cat-card"><span class="cat-icon">💻</span><h3>Công nghệ thông tin</h3></div>
+                    <div class="cat-card"><span class="cat-icon">⚡</span><h3>Điện - Điện tử</h3></div>
+                    <div class="cat-card"><span class="cat-icon">🏗️</span><h3>Xây dựng</h3></div>
+                    <div class="cat-card"><span class="cat-icon">🛢️</span><h3>Dầu khí</h3></div>
+                    <div class="cat-card"><span class="cat-icon">✈️</span><h3>Hàng không vũ trụ</h3></div>
+                    <div class="cat-card"><span class="cat-icon">🧬</span><h3>Công nghệ sinh học</h3></div>
+                    <div class="cat-card"><span class="cat-icon">📊</span><h3>Kinh tế</h3></div>
+                    <div class="cat-card"><span class="cat-icon">🌐</span><h3>Truyền thông</h3></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="docs" id="docs">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Tài liệu mới nhất</h2>
+                    <p>Tài liệu mới nhất được cộng đồng chia sẻ.</p>
+                </div>
+                <div class="docs-grid">
+                    <article class="doc-card">
+                        <div class="doc-type pdf">PDF</div>
+                        <h3>Giải tích I - Tóm tắt lý thuyết & bài tập</h3>
+                        <p class="doc-meta">Nguyễn Văn A · ĐH Tốt nghiệp</p>
+                        <div class="doc-tags"><span>Giải tích</span><span>Kỳ 1</span></div>
+                        <div class="doc-footer">
+                            <button class="btn btn-small">Tải xuống</button>
+                        </div>
+                    </article>
+                    <article class="doc-card">
+                        <div class="doc-type ppt">PPT</div>
+                        <h3>Slide Lập trình hướng đối tượng (Java)</h3>
+                        <p class="doc-meta">Trần Thị B · K66 CNTT</p>
+                        <div class="doc-tags"><span>OOP</span><span>Java</span></div>
+                        <div class="doc-footer">
+                            <button class="btn btn-small">Tải xuống</button>
+                        </div>
+                    </article>
+                    <article class="doc-card">
+                        <div class="doc-type doc">DOC</div>
+                        <h3>Đề cương ôn thi Vật lý đại cương II</h3>
+                        <p class="doc-meta">Lê Văn C · K65 Điện tử</p>
+                        <div class="doc-tags"><span>Vật lý</span><span>Đề cương</span></div>
+                        <div class="doc-footer">
+                            <button class="btn btn-small">Tải xuống</button>
+                        </div>
+                    </article>
+                    <article class="doc-card">
+                        <div class="doc-type pdf">PDF</div>
+                        <h3>Bài tập Mạng máy tính có lời giải</h3>
+                        <p class="doc-meta">Phạm Văn D · K66 CNTT</p>
+                        <div class="doc-tags"><span>Mạng</span><span>Bài tập</span></div>
+                        <div class="doc-footer">
+                            <button class="btn btn-small">Tải xuống</button>
+                        </div>
+                    </article>
+                    <article class="doc-card">
+                        <div class="doc-type pdf">PDF</div>
+                        <h3>Giải bài tập Đại số - Ma trận & không gian véc-tơ</h3>
+                        <p class="doc-meta">Hoàng Thị E · K67 CNTT</p>
+                        <div class="doc-tags"><span>Đại số</span><span>Bài tập</span></div>
+                        <div class="doc-footer">
+                            <button class="btn btn-small">Tải xuống</button>
+                        </div>
+                    </article>
+                    <article class="doc-card">
+                        <div class="doc-type ppt">PPT</div>
+                        <h3>Slide Kỹ thuật lập trình - Cấu trúc dữ liệu</h3>
+                        <p class="doc-meta">Đỗ Văn F · K66 CNTT</p>
+                        <div class="doc-tags"><span>CTDL</span><span>C++</span></div>
+                        <div class="doc-footer">
+                            <button class="btn btn-small">Tải xuống</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta-inner">
+                <h2>Bạn có tài liệu muốn chia sẻ?</h2>
+                <p>Đóng góp cho cộng đồng tài liệu sinh viên Bách Khoa.</p>
+                <button class="btn btn-light">Đăng tải tài liệu</button>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-text">HUST <b>Study Hub</b></span>
+                    <p>Nền tảng chia sẻ tài liệu sinh viên Đại học Bách Khoa Hà Nội.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên kết</h4>
+                    <a href="#">Trang chủ</a>
+                    <a href="#">Tài liệu</a>
+                    <a href="#">Ngành học</a>
+                    <a href="#">Đăng tải</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Hỗ trợ</h4>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Điều khoản</a>
+                    <a href="#">Quyền riêng tư</a>
+                    <a href="#">Liên hệ</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Kết nối</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Telegram</a>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                <p>© 2026 HUST Study Hub. Được xây dựng bởi sinh viên Bách Khoa.</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
